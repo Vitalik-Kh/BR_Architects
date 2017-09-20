@@ -1,0 +1,39 @@
+@import "compass/css3";
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-Regular.ttf);
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-SemiBold.ttf);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    #desktop-nav { display: inline-block !important; }
+    #mobile-nav { display: none !important }
+    #bars-btn { display: none !important}
+}
+
+html { font-size: 100% }
+html > body {
+    font-family: Muli, sans-serif;
+}
+
+.more-spacing {
+    letter-spacing: 0.2em;
+}
