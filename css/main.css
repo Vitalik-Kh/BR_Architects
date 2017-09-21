@@ -75,6 +75,14 @@ hr {
   border-top-color: #cccccc;
 }
 
+/* line 56, ../sass/_base.scss */
+a {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 /* line 10, ../sass/main.scss */
 .main-navbar {
   z-index: 2;

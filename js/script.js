@@ -20,7 +20,6 @@ $(document).ready(function() {
                 if (this.hash !== '') {
                     event.preventDefault();
                     var hash = this.hash;
-                    console.log(this);
                     $(hash).scrollView();
                 }
             })
