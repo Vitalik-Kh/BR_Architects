@@ -28,6 +28,7 @@
     }
 
     #nav-title {
+        cursor: pointer;
         display: inline-block;
         span {
             font-weight: 600;
@@ -208,7 +209,7 @@ header {
 }
 
 //Contact
-#about {
+#contact {
     form {
         input:not([type='submit']) {
             width: 100%;
