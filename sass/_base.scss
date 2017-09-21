@@ -37,3 +37,18 @@ html > body {
 .more-spacing {
     letter-spacing: 0.2em;
 }
+
+#global-container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.my-padding {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+[class*='col-'] { padding: 15px }
+
+hr { border-top-color: lighten($text-color, 60%) }

@@ -52,8 +52,32 @@ html > body {
   letter-spacing: 0.2em;
 }
 
+/* line 41, ../sass/_base.scss */
+#global-container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* line 46, ../sass/_base.scss */
+.my-padding {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 52, ../sass/_base.scss */
+[class*='col-'] {
+  padding: 15px;
+}
+
+/* line 54, ../sass/_base.scss */
+hr {
+  border-top-color: #cccccc;
+}
+
 /* line 10, ../sass/main.scss */
 .main-navbar {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -67,23 +91,23 @@ html > body {
   line-height: 3.1;
   padding: 0 30px;
 }
-/* line 22, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 .main-navbar a {
   color: #333333;
 }
-/* line 24, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .main-navbar a:focus, .main-navbar a:hover {
   text-decoration: none;
 }
-/* line 29, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .main-navbar #nav-title {
   display: inline-block;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .main-navbar #nav-title span {
   font-weight: 600;
 }
-/* line 36, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .main-navbar .bars {
   cursor: pointer;
   position: absolute;
@@ -91,7 +115,7 @@ html > body {
   top: 15px;
   width: 36px;
 }
-/* line 42, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .main-navbar .bars div {
   height: 4px;
   background: #333333;
@@ -102,34 +126,34 @@ html > body {
   transition: 0.2s;
   border-radius: 2px;
 }
-/* line 49, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .main-navbar .bars div:nth-child(3) {
   margin-bottom: 0;
 }
-/* line 51, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .main-navbar .bars:hover div {
   background: #999999;
 }
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .main-navbar .bars-cross div:nth-child(2) {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .main-navbar .bars-cross div:nth-child(1) {
   -moz-transform: translate(2px, 8px) rotate(45deg);
   -ms-transform: translate(2px, 8px) rotate(45deg);
   -webkit-transform: translate(2px, 8px) rotate(45deg);
   transform: translate(2px, 8px) rotate(45deg);
 }
-/* line 61, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .main-navbar .bars-cross div:nth-child(3) {
   -moz-transform: translate(2px, -8px) rotate(-45deg);
   -ms-transform: translate(2px, -8px) rotate(-45deg);
   -webkit-transform: translate(2px, -8px) rotate(-45deg);
   transform: translate(2px, -8px) rotate(-45deg);
 }
-/* line 67, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .main-navbar .navs a {
   margin-right: -6px;
   position: relative;
@@ -139,7 +163,7 @@ html > body {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 74, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .main-navbar .navs a::after {
   content: '\276F';
   -moz-transition: 0.2s;
@@ -150,23 +174,23 @@ html > body {
   opacity: 0;
   margin-left: 2px;
 }
-/* line 81, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .main-navbar .navs li {
   cursor: pointer;
 }
-/* line 83, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .main-navbar .navs li a:hover {
   -moz-transform: translateX(-4px);
   -ms-transform: translateX(-4px);
   -webkit-transform: translateX(-4px);
   transform: translateX(-4px);
 }
-/* line 85, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .main-navbar .navs li a:hover::after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 91, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .main-navbar #mobile-nav {
   list-style: none;
   margin: 0;
@@ -183,7 +207,7 @@ html > body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 101, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .main-navbar #mobile-nav a {
   color: #e6e6e6;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -193,25 +217,25 @@ html > body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 106, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .main-navbar #mobile-nav li {
   display: block;
   text-align: center;
 }
-/* line 109, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .main-navbar #mobile-nav li:hover {
   background: #4d4d4d;
 }
-/* line 116, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .main-navbar .show-m-nav {
   height: 141px !important;
 }
-/* line 118, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .main-navbar .show-m-nav a {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1 !important;
 }
-/* line 124, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .main-navbar #desktop-nav {
   list-style: none;
   margin: 0;
@@ -219,7 +243,7 @@ html > body {
   float: right;
   display: none;
 }
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .main-navbar #desktop-nav li {
   display: inline-block;
   margin-left: 20px;
@@ -228,4 +252,134 @@ html > body {
   -o-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+/* line 141, ../sass/main.scss */
+header {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+/* line 145, ../sass/main.scss */
+header img {
+  width: 100%;
+  height: auto;
+}
+/* line 149, ../sass/main.scss */
+header #header-text {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 158, ../sass/main.scss */
+header #header-text span {
+  font-weight: bold;
+  display: inline-block;
+  padding: 12px 14px;
+  background: #333333;
+}
+
+/* line 168, ../sass/main.scss */
+#projects {
+  margin-bottom: -15px;
+}
+
+/* line 171, ../sass/main.scss */
+.pr-img {
+  position: relative;
+}
+/* line 173, ../sass/main.scss */
+.pr-img img {
+  width: 100%;
+  height: auto;
+}
+/* line 177, ../sass/main.scss */
+.pr-img span {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: black;
+  color: #fff;
+  padding: 10px 14px;
+}
+
+/* line 188, ../sass/main.scss */
+#about {
+  margin-bottom: -15px;
+}
+
+/* line 190, ../sass/main.scss */
+.team img {
+  width: 100%;
+  height: auto;
+  -webkit-filter: saturate(30%);
+  filter: saturate(30%);
+}
+/* line 195, ../sass/main.scss */
+.team .tm-pos {
+  color: gray;
+}
+/* line 196, ../sass/main.scss */
+.team button {
+  outline: none;
+  border: none;
+  background: #ededed;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 204, ../sass/main.scss */
+.team button:hover {
+  background: #cccccc;
+}
+
+/* line 213, ../sass/main.scss */
+#about form input:not([type='submit']) {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 221, ../sass/main.scss */
+#about form input[type='submit'] {
+  border: none;
+  background: #333333;
+  color: #fff;
+  padding: 10px 16px;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 227, ../sass/main.scss */
+#about form input[type='submit']:hover {
+  background: black;
+}
+
+/* line 234, ../sass/main.scss */
+#map-section {
+  padding: 80px 0 0;
+  position: relative;
+}
+/* line 237, ../sass/main.scss */
+#map-section #map {
+  height: 300px;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
 }

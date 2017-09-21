@@ -8,6 +8,9 @@
     <link rel='icon' href='img/' type='image/x-icon'>
     <script src='js/jquery/jquery-3.2.1.js'></script>
     <script src='js/jquery/jquery_color_v2.1.2.js'></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnVh4j-C8Wl-IaCKnJihxetNWF_7uamcU&callback=initMap">
+    </script>
     <script src='js/script.js'></script>
     <link rel='stylesheet' href='css/bootstrap.css' type='text/css'>
     <link rel='stylesheet' href='css/main.css' type='text/css'>
@@ -36,6 +39,108 @@
             <li><a href='#'>Contact</a></li>
         </ul>
     </nav>
+
+    <header>
+        <img src='img/architect.jpg'>
+        <h1 id='header-text'>
+            <span>BR</span> Architects
+        </h1>
+    </header>
+
+    <section class='container-fluid my-padding' id='projects'>
+        <h3>Projects</h3>
+        <hr>
+        <div class='row'>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Summer House</span>
+                <img src='img/house5.jpg' alt='house'>
+            </div>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Brick House</span>
+                <img src='img/house2.jpg' alt='house'>
+            </div>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Renovated</span>
+                <img src='img/house3.jpg' alt='house'>
+            </div>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Barn House</span>
+                <img src='img/house4.jpg' alt='house'>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Brick House</span>
+                <img src='img/house2.jpg' alt='house'>
+            </div>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Summer House</span>
+                <img src='img/house5.jpg' alt='house'>
+            </div>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Barn House</span>
+                <img src='img/house4.jpg' alt='house'>
+            </div>
+            <div class='col-sm-6 col-md-3 pr-img'>
+                <span>Renovated</span>
+                <img src='img/house3.jpg' alt='house'>
+            </div>
+        </div>
+
+    </section><!-- Projects -->
+
+    <section class='container-fluid my-padding' id='about'>
+        <h3>About</h3>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <article class='row team'>
+            <div class='col-sm-6 col-md-3'>
+                <img src='img/team2.jpg' alt='team_member'>
+                <h3>Jhon Doe</h3>
+                <p class='tm-pos'>CEO &#38; Founder</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class='col-sm-6 col-md-3'>
+                <img src='img/team1.jpg' alt='team_member'>
+                <h3>Jane Doe</h3>
+                <p class='tm-pos'>Achitect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class='col-sm-6 col-md-3'>
+                <img src='img/team3.jpg' alt='team_member'>
+                <h3>Mike Ross</h3>
+                <p class='tm-pos'>Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class='col-sm-6 col-md-3'>
+                <img src='img/team4.jpg' alt='team_member'>
+                <h3>Dan Star</h3>
+                <p class='tm-pos'>Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+        </article>
+    </section><!-- About -->
+
+    <section class='container-fluid my-padding' id='about'>
+        <h3>Contact</h3>
+        <hr>
+        <p>Lets get in touch and talk about your and our next project.</p>
+        <form>
+            <input type='text' name='name' placeholder='Name'>
+            <input type='email' name='email' placeholder='Email'>
+            <input type='text' name='subject' placeholder='Subject'>
+            <input type='text' name='Comment' placeholder='Comment'>
+            <input type='submit' value='SEND MESSAGE'>
+        </form>
+    </section><!-- Contact -->
+
+    <section id='map-section'>
+        <div id='map'></div>
+    </section>
 
 </div><!-- global container -->
 
