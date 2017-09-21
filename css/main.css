@@ -383,3 +383,24 @@ header #header-text span {
   -webkit-filter: grayscale(50%);
   filter: grayscale(50%);
 }
+
+/* line 243, ../sass/main.scss */
+footer {
+  height: 100px;
+  background: #333333;
+  color: #b3b3b3;
+  text-align: center;
+  padding-top: 25px;
+}
+/* line 249, ../sass/main.scss */
+footer a {
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #e6e6e6;
+}
+/* line 252, ../sass/main.scss */
+footer a:hover, footer a:focus {
+  color: gray;
+}

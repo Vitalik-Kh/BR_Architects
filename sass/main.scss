@@ -239,3 +239,19 @@ header {
         @include filter(grayscale(50%));
     }
 }
+
+footer {
+    height: 100px;
+    background: $text-color;
+    color: lighten($text-color, 50%);
+    text-align: center;
+    padding-top: 25px;
+    a {
+        @include transition(0.2s);
+        color: lighten($text-color, 70%);
+        &:hover, &:focus {
+            color: lighten($text-color, 30%)
+        }
+
+    }
+}
