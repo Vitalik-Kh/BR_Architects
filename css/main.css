@@ -379,7 +379,7 @@ header #header-text span {
 }
 /* line 237, ../sass/main.scss */
 #map-section #map {
-  height: 300px;
+  height: 450px;
   -webkit-filter: grayscale(50%);
   filter: grayscale(50%);
 }
